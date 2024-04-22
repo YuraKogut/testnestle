@@ -210,5 +210,23 @@ z-index: 9999; /* Ensure tooltip appears on top of other elements */
   top: 177px;
 }
 }
+@media(max-width:540px) {
+  .subcomponent {
+    width: 375px;
+}
+.content{
+    width: 257px;
+left: 10px;
+}
+}
 
+@media(max-width:397px) {
+  .subcomponent {
+    left: 20px;
+}
+.component-head{
+  position:relative;
+  left: 22px;
+}
+}
 
