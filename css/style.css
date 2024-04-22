@@ -1,0 +1,214 @@
+/* Container class for centering and adding padding to the content */
+.container{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Component head class for styling the main heading */
+.component-head{
+  text-align: center;
+  color: #274C5B;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Roboto';
+}
+
+/* Subcomponents class for arranging subcomponents in a row */
+.subcomponents{
+  display: flex;
+  column-gap: 71px;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+/* Subcomponent class for styling individual subcomponents */
+.subcomponent{
+  position: relative;
+  width: 677px;
+  height: 678px;
+}
+
+/* Styling for images inside subcomponents */
+.subcomponent img{
+border-radius: 7%;
+}
+
+/* Content class for styling the content box */
+.content{
+  position: absolute;
+  width: 612px;
+  height: 372px;
+  background: #FFFFFF;
+  border-radius: 7%;
+  top: 306px;
+  left: 27px;
+  box-shadow: 2px 2px 2px 2px rgba(167, 167, 167, 0.25);
+}
+
+/* Content text class for styling the text inside the content box */
+.content-text{
+padding: 54px 57px 54px 57px;
+}
+
+/* Heading text class for styling the heading inside the content box */
+.heading-text{
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 800;
+  color: rgba(39, 76, 91, 1);
+  margin: 0px;
+}
+
+/* Description text class for styling the description inside the content box */
+.description-text{
+font-family: 'Open Sans';
+color: rgba(82, 92, 96, 1);
+font-size: 18px;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+/* Label text class for styling labels */
+.label-text{
+display: flex;
+align-items: center;
+}
+
+/* Text class for styling text inside labels */
+.text{
+font-size: 18px;
+font-family: 'Roboto';
+font-weight: 400;
+color: rgba(39, 76, 91, 1);
+margin-left: 7px;
+}
+
+/* Text content button class for styling buttons */
+.text-content-button{
+  position: absolute;
+  bottom: 33px;
+}
+
+/* CTA button class for styling call-to-action buttons */
+.cta-button{
+text-decoration: none;
+font-size: 20px;
+font-weight: 800;
+color: rgba(39, 76, 91, 1);
+font-family: 'Roboto';
+}
+
+/* Tooltip class for styling tooltips */
+.tooltip {
+position: absolute;
+display: none;
+background: white;
+color: rgba(39, 76, 91, 1);
+font-size: 28px;
+padding: 10px;
+letter-spacing: 2px;
+border: solid 1px black;
+width: 54%;
+z-index: 9999; /* Ensure tooltip appears on top of other elements */
+
+}
+
+.tooltip::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -12px;
+    left: 16px;
+}
+
+
+
+@media(max-width: 1570px){
+  .subcomponents {
+    align-items: center;
+    flex-direction: column;
+  }
+  .subcomponent{
+    margin-bottom: 20px;
+  }
+}
+@media(max-width:1037px) {
+  .subcomponent img {
+    width: 73%;
+}
+.content {
+  width: 430px;
+  height: 304px;
+}
+.tooltip::after {
+  top: -11px;
+}
+.content-text {
+  margin: 0 33px;
+  margin-top: 15px;
+  padding: 0;
+}
+.subcomponents {
+  margin-left: 200px;
+}
+}
+@media(max-width: 778px){
+  
+  .container{
+ padding-right: 60px;
+  }
+  .tooltip::after {
+    top: -11px;
+  }
+.component-head{
+  font-size: 20px;
+}
+}
+@media(max-width: 714px) {
+  .subcomponents {
+    margin-left: 121px;
+}
+.subcomponent{
+  width: 455px;
+}
+  .subcomponent img {
+    width: 74%;
+}
+.heading-text {
+  font-size: 17px;
+}
+.text {
+  font-size: 16px;
+}
+.description-text {
+  font-size: 16px;
+}
+.cta-button {
+  font-size: 18px;
+}
+.tooltip {
+  font-size: 16px;
+  width: 35%;
+  bottom: -69px!important;
+  left: 69px!important;
+}
+.tooltip::after {
+  top: -8px;
+  height: 14px;
+  width: 14px;
+}
+.content {
+  width: 284px;
+  top: 177px;
+}
+}
+
+
